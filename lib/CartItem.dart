@@ -34,7 +34,7 @@ class CartItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return new ListTile(
       onTap: () {
-        cartChangeCallback(product, inCart);
+        cartChangeCallback(product, !inCart);
       },
       leading: new CircleAvatar(
         backgroundColor: _getColor(context),

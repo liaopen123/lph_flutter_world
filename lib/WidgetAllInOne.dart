@@ -15,10 +15,12 @@ class _ShoppingListState extends State<ShoppingList> {
   Set<Product> _shoppingCart = new Set<Product>();
 
   void _handlerCartChanged(Product product, bool inCart) {
-    if (inCart)
-      _shoppingCart.add(product);
-    else
-      _shoppingCart.remove(product);
+    setState(() {
+      if (inCart)
+        _shoppingCart.add(product);
+      else
+        _shoppingCart.remove(product);
+    });
   }
 
   @override
@@ -39,7 +41,7 @@ class _ShoppingListState extends State<ShoppingList> {
 
         }).toList(),
       ),
-      
+
     );
   }
 }
