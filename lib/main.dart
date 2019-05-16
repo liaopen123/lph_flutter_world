@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lph_flutter_world/CartItem.dart';
 import 'package:lph_flutter_world/NewPage.dart';
 import 'package:lph_flutter_world/StatefulPage.dart';
+import 'package:lph_flutter_world/WidgetAllInOne.dart';
 import 'package:lph_flutter_world/optimisedStatefulPage.dart';
 import 'package:lph_flutter_world/widget/CounterStateFulWidget.dart';
 import 'package:lph_flutter_world/widget/Echo.dart';
@@ -19,7 +21,16 @@ import 'package:lph_flutter_world/widget/RandomWordsWidget.dart';
 //    ),
 //  );
 
-void main() =>runApp(new MyApp());
+void main() =>  runApp(new MaterialApp(
+  title: 'Shopping App',
+  home: new ShoppingList(
+    products: <Product>[
+      new Product(name: 'Eggs'),
+      new Product(name: 'Flour'),
+      new Product(name: 'Chocolate chips'),
+    ],
+  ),
+));
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
