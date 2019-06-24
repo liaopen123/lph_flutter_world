@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:lph_flutter_world/CartItem.dart';
 import 'package:lph_flutter_world/NewPage.dart';
 import 'package:lph_flutter_world/StatefulPage.dart';
+import 'package:lph_flutter_world/TestPage.dart';
 import 'package:lph_flutter_world/WidgetAllInOne.dart';
+import 'package:lph_flutter_world/TextDemo.dart';
 import 'package:lph_flutter_world/optimisedStatefulPage.dart';
 import 'package:lph_flutter_world/widget/CounterStateFulWidget.dart';
 import 'package:lph_flutter_world/widget/Echo.dart';
@@ -12,25 +14,20 @@ import 'package:lph_flutter_world/widget/RandomWordsWidget.dart';
 //  title: 'lph app',
 //  home: new MyScaffold(),
 //));
-//  void main() =>runApp(
-//    new Center(
-//      child:new Text(
-//        "hello world233",
-//        textDirection: TextDirection.ltr,
-//      ),
-//    ),
-//  );
+  void main() =>runApp(
+    TextDemo(),
+  );
 
-void main() =>  runApp(new MaterialApp(
-  title: 'Shopping App',
-  home: new ShoppingList(
-    products: <Product>[
-      new Product(name: 'Eggs'),
-      new Product(name: 'Flour'),
-      new Product(name: 'Chocolate chips'),
-    ],
-  ),
-));
+//void main() =>  runApp(new MaterialApp(
+//  title: 'Shopping App',
+//  home: new ShoppingList(
+//    products: <Product>[
+//      new Product(name: 'Eggs'),
+//      new Product(name: 'Flour'),
+//      new Product(name: 'Chocolate chips'),
+//    ],
+//  ),
+//));
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -142,7 +139,10 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             FlatButton(
-              child: Text("用路由表跳转到NewPage页面"),
+              child: Text("用路由表跳转到NewPage页面",textDirection: TextDirection.ltr,style:TextStyle(
+                fontSize: 40,
+                color: Colors.yellow,
+              ) ,),
               textColor: Colors.blue,
               onPressed: () {
                 Navigator.pushNamed(context, "newPage");
