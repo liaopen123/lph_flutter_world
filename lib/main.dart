@@ -6,16 +6,24 @@ import 'package:lph_flutter_world/TestPage.dart';
 import 'package:lph_flutter_world/WidgetAllInOne.dart';
 import 'package:lph_flutter_world/TextDemo.dart';
 import 'package:lph_flutter_world/optimisedStatefulPage.dart';
+import 'package:lph_flutter_world/viewgroup/FlexDemo.dart';
+import 'package:lph_flutter_world/viewgroup/FlowDemo.dart';
+import 'package:lph_flutter_world/viewgroup/RowDemo.dart';
+import 'package:lph_flutter_world/viewgroup/StackDemo.dart';
 import 'package:lph_flutter_world/widget/CounterStateFulWidget.dart';
 import 'package:lph_flutter_world/widget/Echo.dart';
 import 'package:lph_flutter_world/widget/RandomWordsWidget.dart';
+
+import 'ButtonDemo.dart';
+import 'ImageDemo.dart';
+import 'TextFieldDemo.dart';
 
 //void main() => runApp(new MaterialApp(
 //  title: 'lph app',
 //  home: new MyScaffold(),
 //));
   void main() =>runApp(
-    TextDemo(),
+    StackDemo(),
   );
 
 //void main() =>  runApp(new MaterialApp(
