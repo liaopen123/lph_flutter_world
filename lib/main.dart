@@ -17,13 +17,23 @@ import 'package:lph_flutter_world/widget/RandomWordsWidget.dart';
 import 'ButtonDemo.dart';
 import 'ImageDemo.dart';
 import 'TextFieldDemo.dart';
+import 'containerwidget/ConstrainedBoxDemo.dart';
+import 'containerwidget/ContainerDemo.dart';
+import 'containerwidget/DecoratedBoxDemo.dart';
+import 'containerwidget/PaddingDemo.dart';
+import 'containerwidget/ScaffoldTabBarNavigation.dart';
+import 'containerwidget/TransformDemo.dart';
 
 //void main() => runApp(new MaterialApp(
 //  title: 'lph app',
 //  home: new MyScaffold(),
 //));
   void main() =>runApp(
-    StackDemo(),
+
+    MaterialApp(
+      home: new  ScaffoldTabBarNavigation(),
+    )
+
   );
 
 //void main() =>  runApp(new MaterialApp(
