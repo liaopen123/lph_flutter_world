@@ -48,8 +48,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/2.0x/ic_launcher.png
-    - images/3.0x/ic_launcher.png
+    - images/lake.jpg
 #  fonts:
 #    - family: Schyler
 #      fonts:

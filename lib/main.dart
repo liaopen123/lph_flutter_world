@@ -23,6 +23,7 @@ import 'canscrollwidgets/GridViewDemo.dart';
 import 'canscrollwidgets/InfiniteListView.dart';
 import 'canscrollwidgets/ListViewDemo.dart';
 import 'canscrollwidgets/SingleChildScrollViewDemo.dart';
+import 'classtwo/PageDetails.dart';
 import 'containerwidget/ConstrainedBoxDemo.dart';
 import 'containerwidget/ContainerDemo.dart';
 import 'containerwidget/DecoratedBoxDemo.dart';
@@ -39,7 +40,7 @@ import 'navigator/NavigatorDemo1.dart';
 //  home: new MyScaffold(),
 //));
   void main() =>runApp(
-      NavigatorDemo1()
+      PageDetails()
   );
 
 //void main() =>  runApp(new MaterialApp(
