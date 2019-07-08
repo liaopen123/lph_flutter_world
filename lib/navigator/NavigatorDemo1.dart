@@ -41,8 +41,8 @@ final List<Product> products;
           title: Text(products[index].productName),
 
           onTap: (){
-            Navigator.push(context, new MaterialPageRoute(builder:  (context)=> ProductDetailsDemo(product: products[index])));
-          },
+            _startPageWithResult(context,index);
+                },
 
         );
       }),
@@ -50,5 +50,13 @@ final List<Product> products;
   }
 
   ProductList({Key key,@required this.products}):super(key:key);
+
+
+  _startPageWithResult(BuildContext context,int index) async{
+    final  result = await    Navigator.push(context, new MaterialPageRoute(builder:  (context)=> ProductDetailsDemo(product: products[index])));
+
+
+    Scaffold.of(context).showSnackBar(SnackBar(content: Text("result:$result")));
+  }
 
 }
