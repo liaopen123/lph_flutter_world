@@ -32,13 +32,14 @@ import 'containerwidget/TransformDemo.dart';
 import 'functionmethod/WillPopScopeDemo.dart';
 import 'guestruedetector/SlideDeleteDemo.dart';
 import 'guestruedetector/TapDownDemo.dart';
+import 'navigator/NavigatorDemo1.dart';
 
 //void main() => runApp(new MaterialApp(
 //  title: 'lph app',
 //  home: new MyScaffold(),
 //));
   void main() =>runApp(
-      SlideDeleteDemo()
+      NavigatorDemo1()
   );
 
 //void main() =>  runApp(new MaterialApp(
