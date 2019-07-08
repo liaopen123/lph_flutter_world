@@ -15,6 +15,7 @@ import 'package:lph_flutter_world/widget/Echo.dart';
 import 'package:lph_flutter_world/widget/RandomWordsWidget.dart';
 
 import 'ButtonDemo.dart';
+import 'DiDiAppBar.dart';
 import 'ImageDemo.dart';
 import 'TextFieldDemo.dart';
 import 'canscrollwidgets/CustomScrollViewTestRoute.dart';
@@ -29,13 +30,15 @@ import 'containerwidget/PaddingDemo.dart';
 import 'containerwidget/ScaffoldTabBarNavigation.dart';
 import 'containerwidget/TransformDemo.dart';
 import 'functionmethod/WillPopScopeDemo.dart';
+import 'guestruedetector/SlideDeleteDemo.dart';
+import 'guestruedetector/TapDownDemo.dart';
 
 //void main() => runApp(new MaterialApp(
 //  title: 'lph app',
 //  home: new MyScaffold(),
 //));
   void main() =>runApp(
-      ImageDemo()
+      SlideDeleteDemo()
   );
 
 //void main() =>  runApp(new MaterialApp(
