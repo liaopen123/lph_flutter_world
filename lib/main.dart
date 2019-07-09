@@ -24,6 +24,8 @@ import 'canscrollwidgets/InfiniteListView.dart';
 import 'canscrollwidgets/ListViewDemo.dart';
 import 'canscrollwidgets/SingleChildScrollViewDemo.dart';
 import 'classtwo/PageDetails.dart';
+import 'classtwo/RecipeDemo.dart';
+import 'classtwo/row_and_column/RowDemo.dart';
 import 'containerwidget/ConstrainedBoxDemo.dart';
 import 'containerwidget/ContainerDemo.dart';
 import 'containerwidget/DecoratedBoxDemo.dart';
@@ -40,7 +42,7 @@ import 'navigator/NavigatorDemo1.dart';
 //  home: new MyScaffold(),
 //));
   void main() =>runApp(
-      PageDetails()
+      RecipeDemo()
   );
 
 //void main() =>  runApp(new MaterialApp(
